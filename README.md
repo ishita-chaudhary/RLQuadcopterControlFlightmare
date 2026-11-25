@@ -2,7 +2,7 @@
 
 **ROS 2 and C++/Python implementations for running Flightmare-trained quadrotor reinforcement-learning policies in a separate PX4–Gazebo simulation.**
 
-This repository is part of the [Robust Goal-Directed Aerial Manipulation project](https://github.com/1shit4/aerial-manipulation-rl-control). The associated [Flightmare training repository](https://github.com/1shit4/flightmare) contains quadrotor RL environments and policy-training code. Here, the focus is **sim-to-sim policy execution**: reconstructing a policy's observations from PX4 feedback, running an exported model, and converting its actions into motor commands for the simulated vehicle.
+This repository is part of the [Robust Goal-Directed Aerial Manipulation project](https://github.com/ishita-chaudhary/aerial-manipulation-rl-control). The associated [Flightmare training repository](https://github.com/ishita-chaudhary/flightmare) contains quadrotor RL environments and policy-training code. Here, the focus is **sim-to-sim policy execution**: reconstructing a policy's observations from PX4 feedback, running an exported model, and converting its actions into motor commands for the simulated vehicle.
 
 ## Flightmare-to-PX4 Control Pipeline
 
@@ -82,7 +82,7 @@ Relevant files include [`test_drone.py`](src/test_drone/scripts/test_drone.py), 
 
 This workspace was used to test **Flightmare-trained quadrotor policies in PX4–Gazebo**, including hovering and goal-directed position control. The purpose was to assess execution in a different simulator and flight-control interface from the environment used for training.
 
-The repository preserves the policy-inference and control code rather than a consolidated quantitative benchmark. Policy training, reward design, and trajectory-generation experiments are documented in the [Flightmare repository](https://github.com/1shit4/flightmare).
+The repository preserves the policy-inference and control code rather than a consolidated quantitative benchmark. Policy training, reward design, and trajectory-generation experiments are documented in the [Flightmare repository](https://github.com/ishita-chaudhary/flightmare).
 
 ## Repository Structure
 
@@ -116,8 +116,8 @@ Vehicle parameters, motor ordering, controller gains, and model normalization sh
 
 ## Related Repositories
 
-- [Aerial Manipulation — Project Overview](https://github.com/1shit4/aerial-manipulation-rl-control): research objective and complete repository index.
-- [Flightmare Training](https://github.com/1shit4/flightmare): quadrotor RL environment, PPO training, policy evaluation, and ONNX export.
-- [Quadrotor Inner-Loop Control](https://github.com/1shit4/quadcopter_inner_loop_control): separate disturbance-estimating, ASMC, and Adaptive INDI control experiments for aerial manipulation.
+- [Aerial Manipulation — Project Overview](https://github.com/ishita-chaudhary/aerial-manipulation-rl-control): research objective and complete repository index.
+- [Flightmare Training](https://github.com/ishita-chaudhary/flightmare): quadrotor RL environment, PPO training, policy evaluation, and ONNX export.
+- [Quadrotor Inner-Loop Control](https://github.com/ishita-chaudhary/quadcopter_inner_loop_control): separate disturbance-estimating, ASMC, and Adaptive INDI control experiments for aerial manipulation.
 
 *Research conducted at the Robotics Research Center, IIIT Hyderabad. PX4 message definitions and the underlying Flightmare/PX4/Gazebo frameworks are credited to their respective upstream projects.*
